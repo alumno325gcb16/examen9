@@ -57,7 +57,7 @@ function Localiza(posicion) {
 // error en la geolocalizacion 
 //
 function ErrorLocalizacion(error) {
-	alert('codigo: '   + '\n'  +
+	alert('codigo: '   + error.code  + '\n'  +
 	'mensaje:  ' + error.message + '\n');
 }
 	
