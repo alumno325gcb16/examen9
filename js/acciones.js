@@ -17,7 +17,7 @@ $(document).ready(function(e) {
 	//
 	var opciones = {frequency: 2000};
 	watchID = navigator.accelerometer.watchAcceleration(Correcto, error, opciones);
-	navigator.geolocation.getCurrentPosition(Localiza, errorLocalizacion);
+	navigator.geolocation.getCurrentPosition(Localiza, ErrorLocalizacion);
 }
 // detiene la 'obcerbacion' de la aceleracion
 //
@@ -44,7 +44,7 @@ function Error() {
 // exito al localizar
 //
 function Localiza(posicion) {
-	var element =document.getElementById('geolocalizacion');
+	var element = document.getElementById('geolocalizacion');
 	element.innerHTML = 'Latitud: '     + posicion.coords.latitude    + '<br />' +
 	                    'Longitud: '    + posicion.coords.longitude   +  '<br />' +
 						'Altitud: '    + posicion.coords.altitude   +  '<br />' +
