@@ -43,7 +43,7 @@ function Error() {
 }
 // exito al localizar
 //
-function Localizar(posicion) {
+function Localiza(posicion) {
 	var element =document.getElementById('geolocalizacion');
 	element.innerHTML = 'Latitud: '     + posicion.coords.latitude    + '<br />' +
 	                    'Longitud: '    + posicion.coords.longitude   +  '<br />' +
